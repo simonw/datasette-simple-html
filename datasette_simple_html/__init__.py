@@ -7,6 +7,8 @@ tag_re = re.compile(r"<[^>]*>")
 
 def strip_tags(text):
     "A very naive tag stripping implementation"
+    if text is None:
+        return None
     return tag_re.sub("", text)
 
 
