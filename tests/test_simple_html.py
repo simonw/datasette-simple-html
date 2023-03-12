@@ -11,7 +11,7 @@ import pytest
         ("html_unescape", "&lt;p&gt;You&#x27;ll&lt;/p&gt;", "<p>You'll</p>"),
         ("html_strip_tags", None, None),
         ("html_escape", None, None),
-        ("html_unescape", None, None),  
+        ("html_unescape", None, None),
     ),
 )
 async def test_simple_html(fn, input, expected):
